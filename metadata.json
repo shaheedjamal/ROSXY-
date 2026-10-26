@@ -1,0 +1,6 @@
+{
+  "name": "ROSXY: The Cyberverse",
+  "description": "Learn to Code. Play to Win. Think Like a Hacker. An open-world inspired cyberpunk 3D RPG teaching programming and cybersecurity through gameplay.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+:root {
+  --neon-cyan: #00f3ff;
+  --neon-magenta: #ff007f;
+  --neon-amber: #ffaa00;
+  --neon-green: #00ff66;
+  --cyber-dark: #070913;
+  --cyber-panel: #0d1224;
+  --cyber-border: #1e294f;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #05070e;
+  color: #e2e8f0;
+  font-family: 'Rajdhani', -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow: hidden;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
+.font-cyber {
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+.font-code {
+  font-family: 'Fira Code', monospace;
+}
+
+/* Custom Cyber Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080d1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e294b;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00f3ff;
+}
+
+/* Cyber Glow Utilities */
+.neon-glow-cyan {
+  text-shadow: 0 0 8px rgba(0, 243, 255, 0.6), 0 0 20px rgba(0, 243, 255, 0.3);
+}
+
+.neon-glow-magenta {
+  text-shadow: 0 0 8px rgba(255, 0, 127, 0.6), 0 0 20px rgba(255, 0, 127, 0.3);
+}
+
+.neon-glow-green {
+  text-shadow: 0 0 8px rgba(0, 255, 102, 0.6), 0 0 20px rgba(0, 255, 102, 0.3);
+}
+
+.neon-box-cyan {
+  box-shadow: 0 0 15px rgba(0, 243, 255, 0.25), inset 0 0 15px rgba(0, 243, 255, 0.1);
+}
+
+.neon-box-magenta {
+  box-shadow: 0 0 15px rgba(255, 0, 127, 0.25), inset 0 0 15px rgba(255, 0, 127, 0.1);
+}
+
+/* Scanline Overlay for Cyber Retro Mode */
+.cyber-scanlines {
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%, 
+    rgba(0, 0, 0, 0.25) 50%
+  ), linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 0.03),
+    rgba(0, 255, 0, 0.01),
+    rgba(0, 0, 255, 0.03)
+  );
+  background-size: 100% 4px, 6px 100%;
+  pointer-events: none;
+}
